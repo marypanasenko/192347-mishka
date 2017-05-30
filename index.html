@@ -5,8 +5,114 @@
     <title>HTML Academy: Мишка</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">Продвинутый HTML и CSS</a>».</p>
-
+    <header class="page-header">
+      <a class="page-header__logo">
+        <img src="" alt="Логотип Интернерт-магазин Мишка" width="" height=""></img>
+      </a>
+      <nav class="main-nav main-nav--open">
+        <span class="main-nav__toggler"></span>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a href="#">Каталог товаров</a></li>
+            <li class="main-nav__item"><a href="#">Вязание на заказ</a></li>
+            <li class="main-nav__item"><a href="#">Поиск по сайту</a></li>
+            <li class="main-nav__item"><a href="#">Корзина: пока пуста</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="promo-block">
+        <div class="sub-nav__wrapper">
+          <ul class="sub-nav__list">
+            <li class="sub-nav__item sub-nav__item--top"><a href="#">Новое поступление</a></li>
+            <li class="sub-nav__item sub-nav__item--top"><a href="#">Распродажа</a></li>
+            <li class="sub-nav__item sub-nav__item--top"><span>Бесплатная доставка по России</span></li>
+          </ul>
+        </div>
+        <h1 class="promo-block__title">Интернерт-магазин "Мишка"</h1>
+        <a class="sub-nav__item sub-nav__item--bottom" href="#">Предметы интерьера</a>
+        <a class="sub-nav__item sub-nav__item--bottom" href="#">Детские игрушки</a>
+      </div>
+    </header>
+    <main class="page-content">
+      <section class="product-item">
+        <h2 class="product-item__name">Вязанные корзинки</h2>
+        <span class="product-item__feature">Товар недели</span>
+        <p class="product-item__descr">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трех размерах.</p>
+        <table class="product-item__table">
+          <tr class="product-item__row">
+            <td class="product-item__column product-item_column--left">Цвет:</td>
+            <td class="product-item__column product-item__column--right">«Тиффани»/серый</td>
+          </tr>
+          <tr class="product-item__row">
+            <td class="product-item__column product-item__column--left">Диаметр:</td>
+            <td class="product-item__column product-item__column--right">25 см</td>
+          </tr>
+          <tr class="product-item__row">
+            <td class="product-item__column product-item__column--left">Высота:</td>
+            <td class="product-item__column product-item__column--right">15 см</td>
+          </tr>
+        </table>
+        <img class="product-item__img"src="" alt="Вязанные корзинки" width="" height="">
+        <span class="product-item__price">Цена: 990 руб.</span>
+        <a class="product-item__btn btn" href="#">Заказать</a>
+        <form class="buy-modal" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset>
+            <legend class="buy-modal__title">Добавить в корзину</legend>
+            <span class="buy-modal__text">Выберите размер:</span>
+            <input type="checkbox" name="sizes" id="size-s" checked>
+            <label class="buy-modal__sizes" for="size-s">s</label>
+            <input type="checkbox" name="sizes" id="size-m">
+            <label class="buy-modal__sizes" for="size-m">m</label>
+            <input type="checkbox" name="sizes" id="size-l">
+            <label class="buy-modal__sizes" for="size-l">l</label>
+          </fieldset>
+          <input type="submit" value="Добавить">
+        </form>
+      </section>
+      <section class="about-us">
+        <h3 class="about-us__name">Коротко о нас:</h3>
+        <ul class="about-us__list">
+          <li class="about-us__item">Экологические чистые материалы</li>
+          <li class="about-us__item">Скандинавский стиль по российской цене</li>
+          <li class="about-us__item">Увеличивает лайки на фотографиях</li>
+          <li class="about-us__item">Связано вручную с любовью и умилением</li>
+          <li class="about-us__item">Поддержка отечественного произвдителя</li>
+          <li class="about-us__item">Поставляеться в подарочной упаковке</li>
+        </ul>
+      </section>
+      <section class="reviews">
+        <h3 class="reviews__title">Отзывы</h3>
+        <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+        <span class="reviews__author‐name">Анастасия Красильникова</span>
+        <span class="reviews__author‐login">Анастасия Красильникова</span>
+        <button class="reviews__prev" type="button">Предыдущий отзыв</button>
+        <button class="reviews__next" type="button">Следующий отзыв</button>
+        <a class="reviews__write btn" href="">Написать</a>
+      </section>
+      <section class="contacts">
+        <h3 class="contacts__title">Контакты</h3>
+        <div class="contacts__info">
+          <span class="contants__email">e-mail:<a href="#">info@mimimishkashop.ru</a></span>
+          <span class="contacts__address">адрес: <span>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</span></span>
+        </div>
+        <a class="contacts__map" href="#">
+          <img src="" alt="Карта" width="" height="">
+        </a>
+        <a class="contacts__write btn" href="">Напишите нам</a>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page‐footer__social">
+        <a class="page-footer__logo">
+          <img src="" alt="Логотип Интернерт-магазин Мишка" width="" height="">
+        </a>
+        <span class="social‐links">
+          <a class="social‐link social‐link‐‐vk" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+          <a class="social‐link social‐link‐‐fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+          <a class="social‐link social‐link‐‐in" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+        </span>
+      </div>
+      <span class="page-footer__copyright">Разработано</span>
+    </footer>
   </body>
 </html>
