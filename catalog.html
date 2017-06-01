@@ -6,29 +6,25 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo" href="#">
+      <a class="page-header__logo">
         <img src="" alt="Логотип Интернерт-магазин Мишка" width="" height=""></img>
       </a>
       <nav class="main-nav main-nav--open">
-        <span class="main-nav__toggler"></span>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item"><a href="#">Каталог товаров</a></li>
-            <li class="main-nav__item"><a href="#">Вязание на заказ</a></li>
-            <li class="main-nav__item"><a href="#">Поиск по сайту</a></li>
-            <li class="main-nav__item"><a href="#">Корзина: пока пуста</a></li>
-          </ul>
-        </div>
+        <button class="main-nav__toggler" type="button" title="Меню"></button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a href="#">Каталог товаров</a></li>
+          <li class="main-nav__item"><a href="#">Вязание на заказ</a></li>
+          <li class="main-nav__item"><a href="#">Поиск по сайту</a></li>
+          <li class="main-nav__item"><a href="#">Корзина: пока пуста</a></li>
+        </ul>
+        <ul class="main-nav__list main-nav__list--additional">
+          <li class="main-nav__item main-nav__item--addtional"><a href="#">Новое поступление</a></li>
+          <li class="main-nav__item main-nav__item--addtional"><a href="#">Распродажа</a></li>
+          <li class="main-nav__item main-nav__item--addtional"><span>Бесплатная доставка по России</span></li>
+        </ul>
       </nav>
-      <div class="promo-block">
-        <div class="sub-nav__wrapper">
-          <ul class="sub-nav__list">
-            <li class="sub-nav__item sub-nav__item--top"><a href="#">Новое поступление</a></li>
-            <li class="sub-nav__item sub-nav__item--top"><a href="#">Распродажа</a></li>
-            <li class="sub-nav__item sub-nav__item--top"><span>Бесплатная доставка по России</span></li>
-          </ul>
-        </div>
-        <h1 class="promo-block__title">Каталог товаров</h1>
+      <div class="header-label">
+        <h1 class="header-label__title">Интернерт-магазин "Мишка"</h1>
       </div>
     </header>
     <main class="page-content">
@@ -37,10 +33,10 @@
           <a class="catalog-item__image" href="#">
             <img src="" alt="Зайчик-попрыгайчик" width="" height="">
           </a>
-          <a class="catalog-item__title" href="#">
-            <h2>Зайчик-попрыгайчик</h2>
-          </a>
-          <span class="catalog-item__descr">Рост 30 см, вес 200 г</span>
+          <h2 class="catalog-item__title">
+            <a href="#">Зайчик-попрыгайчик</a>
+          </h2>
+          <p class="catalog-item__descr">Рост 30 см, вес 200 г</p>
           <div class="catalog-item__inner">
             <span class="catalog-item__price">1200 руб.</span>
             <a class="catalog-item__buy-icon" href="#">Купить</a>
@@ -50,10 +46,10 @@
           <a class="catalog-item__image" href="#">
             <img src="" alt="Корзинка для белья" width="" height="">
           </a>
-          <a class="catalog-item__title" href="#">
-            <h2>Корзинка для белья</h2>
-          </a>
-          <span class="catalog-item__descr">Диаметр 15 см, высота 10 см</span>
+          <h2 class="catalog-item__title">
+            <a href="#">Корзинка для белья</a>
+          </h2>
+          <p class="catalog-item__descr">Диаметр 15 см, высота 10 см</p>
           <div class="catalog-item__inner">
             <span class="catalog-item__price">690 руб.</span>
             <a class="catalog-item__buy-icon" href="#">Купить</a>
@@ -63,30 +59,15 @@
           <a class="catalog-item__image" href="#">
             <img src="" alt="Большая корзина" width="" height="">
           </a>
-          <a class="catalog-item__title" href="#">
-            <h2>Большая корзина для игрушек</h2>
-          </a>
-          <span class="catalog-item__descr">Диаметр 30 см, высота 30 см</span>
+          <h2 class="catalog-item__title">
+            <a href="#">Большая корзина для игрушек</a>
+          </h2>
+          <p class="catalog-item__descr">Диаметр 30 см, высота 30 см</p>
           <div class="catalog-item__inner">
             <span class="catalog-item__price">1 500 руб.</span>
             <a class="catalog-item__buy-icon" href="#">Купить</a>
           </div>
         </article>
-        <form class="buy-modal" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset>
-            <legend class="buy-modal__title">Добавить в корзину</legend>
-            <span class="buy-modal__text">Выберите размер:</span>
-            <input type="checkbox" name="sizes" id="size-s" checked>
-            <label class="buy-modal__sizes" for="size-s">s</label>
-            <input type="checkbox" name="sizes" id="size-m">
-            <label class="buy-modal__sizes" for="size-m">m</label>
-            <input type="checkbox" name="sizes" id="size-l">
-            <label class="buy-modal__sizes" for="size-l">l</label>
-          </fieldset>
-          <input type="submit" value="Добавить">
-        </form>
-      </section>
-      <section>
         <article class="video-production">
           <h2 class="video-production__title">Процесс производства</h2>
           <video class="video-production__video" width="" height="" controls="controls" poster="video/production.jpg">
@@ -101,13 +82,31 @@
         <a class="page-footer__logo">
           <img src="" alt="Логотип Интернерт-магазин Мишка" width="" height="">
         </a>
-        <span class="social‐links">
+        <div class="social‐links">
           <a class="social‐link social‐link‐‐vk" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
           <a class="social‐link social‐link‐‐fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
           <a class="social‐link social‐link‐‐in" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
-        </span>
+        </div>
       </div>
       <span class="page-footer__copyright">Разработано</span>
+      <a class="page-footer__academy-logo" href="https://htmlacademy.ru/intensive/adaptive">
+        <img src="" alt="Логотип HTML Academy" width="" height="">
+      </a>
     </footer>
+    <div class="buy-modal">
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <fieldset>
+          <legend class="buy-modal__title">Добавить в корзину</legend>
+          <span class="buy-modal__text">Выберите размер:</span>
+          <input type="radio" name="sizes" value="s" id="size-s" checked>
+          <label class="buy-modal__item" for="size-s">s</label>
+          <input type="radio" name="sizes" value="m" id="size-m">
+          <label class="buy-modal__item" for="size-m">m</label>
+          <input type="radio" name="sizes" value="l" id="size-l">
+          <label class="buy-modal__item" for="size-l">l</label>
+        </fieldset>
+        <input type="submit" value="Добавить">
+      </form>
+    </div>
   </body>
 </html>
