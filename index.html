@@ -20,14 +20,14 @@
         <ul class="main-nav__list main-nav__list--additional">
           <li class="main-nav__item main-nav__item--addtional"><a href="#">Новое поступление</a></li>
           <li class="main-nav__item main-nav__item--addtional"><a href="#">Распродажа</a></li>
-          <li class="main-nav__item main-nav__item--addtional"><span>Бесплатная доставка по России</span></li>
+          <li class="main-nav__item main-nav__item--addtional">Бесплатная доставка по России</li>
         </ul>
       </nav>
-      <div class="header-label">
-        <h1 class="header-label__title">Интернерт-магазин "Мишка"</h1>
-        <a class="header-label__item" href="#">Предметы интерьера</a>
-        <a class="header-label__item" href="#">Детские игрушки</a>
+      <div class="page-title page-title--background">
+        <h1 class="page-title__text">Интернерт-магазин "Мишка"</h1>
       </div>
+      <a class="group-item" href="#">Предметы интерьера</a>
+      <a class="group-item" href="#">Детские игрушки</a>
     </header>
     <main class="page-content">
       <article class="product-item">
@@ -65,20 +65,27 @@
       </section>
       <section class="reviews">
         <h3 class="reviews__title">Отзывы</h3>
-        <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-        <cite class="reviews__author‐login">Анастасия Красильникова</cite>
+        <blockquote class="reviews__cite">
+          <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+          <cite class="reviews__author-name">Анастасия Красильникова</cite>
+          <span class="reviews__nick-name">@misssssiskras</span>
+        </blockquote>
         <button class="reviews__prev" type="button" title="Предыдущий отзыв">Предыдущий отзыв</button>
         <button class="reviews__next" type="button" title="Следующий отзыв">Следующий отзыв</button>
         <a class="reviews__write btn" href="">Написать</a>
       </section>
       <section class="contacts">
         <h3 class="contacts__title">Контакты</h3>
-        <ul class="contacts__info">
-          <li class="contants__email">e-mail:</li>
-          <li><a href="#">info@mimimishkashop.ru</a></li>
-          <li class="contacts__address">адрес:</li>
-          <li>г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</li>
-        </ul>
+        <table class="contacts__info-table">
+          <tr class="contacts__email-row">
+            <td class="contacts__email-column">e-mail:</td>
+            <td class="contacts__email-column"><a href="#">info@mimimishkashop.ru</a></td>
+          </tr>
+          <tr class="contacts__email-row">
+            <td class="contacts__email-column">адрес:</td>
+            <td class="contacts__email-column">г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101</td>
+          </tr>
+        </table>
         <div class="contacts__map" href="#"></div>
         <a class="contacts__write btn" href="">Напишите нам</a>
       </section>
@@ -94,23 +101,23 @@
           <a class="social‐link social‐link‐‐in" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
         </div>
       </div>
-      <span class="page-footer__copyright">Разработано</span>
-      <a class="page-footer__academy-logo" href="https://htmlacademy.ru/intensive/adaptive">
-        <img src="" alt="Логотип HTML Academy" width="" height="">
-      </a>
+      <div class="page-footer__copyright">
+        <span class="page-footer__copyright-text">Разработано</span>
+        <a class="page-footer__copyright-logo" href="https://htmlacademy.ru/intensive/adaptive">
+          <img src="" alt="Логотип HTML Academy" width="" height="">
+        </a>
+      </div>
     </footer>
     <div class="buy-modal">
       <form action="https://echo.htmlacademy.ru" method="post">
-        <fieldset>
-          <legend class="buy-modal__title">Добавить в корзину</legend>
-          <span class="buy-modal__text">Выберите размер:</span>
-          <input type="radio" name="sizes" value="s" id="size-s" checked>
-          <label class="buy-modal__item" for="size-s">s</label>
-          <input type="radio" name="sizes" value="m" id="size-m">
-          <label class="buy-modal__item" for="size-m">m</label>
-          <input type="radio" name="sizes" value="l" id="size-l">
-          <label class="buy-modal__item" for="size-l">l</label>
-        </fieldset>
+        <p class="buy-modal__title">Добавить в корзину</p>
+        <span class="buy-modal__text">Выберите размер:</span>
+        <input type="radio" name="sizes" value="s" id="size-s" checked>
+        <label class="buy-modal__item" for="size-s">s</label>
+        <input type="radio" name="sizes" value="m" id="size-m">
+        <label class="buy-modal__item" for="size-m">m</label>
+        <input type="radio" name="sizes" value="l" id="size-l">
+        <label class="buy-modal__item" for="size-l">l</label>
         <input type="submit" value="Добавить">
       </form>
     </div>

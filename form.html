@@ -20,11 +20,11 @@
         <ul class="main-nav__list main-nav__list--additional">
           <li class="main-nav__item main-nav__item--addtional"><a href="#">Новое поступление</a></li>
           <li class="main-nav__item main-nav__item--addtional"><a href="#">Распродажа</a></li>
-          <li class="main-nav__item main-nav__item--addtional"><span>Бесплатная доставка по России</span></li>
+          <li class="main-nav__item main-nav__item--addtional">Бесплатная доставка по России</li>
         </ul>
       </nav>
-      <div class="header-label">
-        <h1 class="header-label__title">Интернерт-магазин "Мишка"</h1>
+      <div class="page-title page-title--background">
+        <h1 class="page-title__text">Интернерт-магазин "Мишка"</h1>
       </div>
     </header>
     <main class="page-content">
@@ -55,20 +55,20 @@
         <fieldset class="form-order__item">
           <legend class="form-order__title">ФИО</legend>
           <label class="form-order__label" for="name">Имя:</label>
-          <input class="form-order__text" type="text" placeholder="Введите ваше имя*" name="name" id="name" required>
+          <input class="form-order__entry-field" type="text" placeholder="Введите ваше имя*" name="name" id="name" required>
           <label class="form-order__label" for="surname">Фамилия:</label>
-          <input class="form-order__text" type="text" placeholder="Укажите фамилию*" name="surname" id="surname" required>
+          <input class="form-order__entry-field" type="text" placeholder="Укажите фамилию*" name="surname" id="surname" required>
           <label class="form-order__label" for="patronym">Отчество:</label>
-          <input class="form-order__text" type="text" placeholder="Отчество, если желаете" name="patronym" id="patronym">
+          <input class="form-order__entry-field" type="text" placeholder="Отчество, если желаете" name="patronym" id="patronym">
         </fieldset>
         <div class="form-order__item">
           <label class="form-order__title" for="tel">Тел</label>
-          <input class="form-order__text" type="tel" placeholder="+7 XXX XX XX*" name="tel" id="tel"required>
+          <input class="form-order__entry-field" type="tel" placeholder="+7 XXX XX XX*" name="tel" id="tel"required>
           <label class="form-order__title" for="email">e-mail</label>
-          <input class="form-order__text" type="email" placeholder="Ваш Email*" name="email" required>
+          <input class="form-order__entry-field" type="email" placeholder="Ваш Email*" name="email" required>
         </div>
         <label class="form-order__title" for="message">Доп</label>
-        <textarea class="form-order__text" placeholder="Опишите все ваши пожелания к заказу" name="message"></textarea>
+        <textarea class="form-order__entry-wishes" placeholder="Опишите все ваши пожелания к заказу" name="message"></textarea>
         <span class="form-order__notice">*Поля обязательны для заполнения</span>
         <input type="submit" value="Отправить заказ">
       </form>
@@ -84,10 +84,12 @@
           <a class="social‐link social‐link‐‐in" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
         </div>
       </div>
-      <span class="page-footer__copyright">Разработано</span>
-      <a class="page-footer__academy-logo" href="https://htmlacademy.ru/intensive/adaptive">
-        <img src="" alt="Логотип HTML Academy" width="" height="">
-      </a>
+      <div class="page-footer__copyright">
+        <span class="page-footer__copyright-text">Разработано</span>
+        <a class="page-footer__copyright-logo" href="https://htmlacademy.ru/intensive/adaptive">
+          <img src="" alt="Логотип HTML Academy" width="" height="">
+        </a>
+      </div>
     </footer>
   </body>
 </html>

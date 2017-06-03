@@ -20,11 +20,11 @@
         <ul class="main-nav__list main-nav__list--additional">
           <li class="main-nav__item main-nav__item--addtional"><a href="#">Новое поступление</a></li>
           <li class="main-nav__item main-nav__item--addtional"><a href="#">Распродажа</a></li>
-          <li class="main-nav__item main-nav__item--addtional"><span>Бесплатная доставка по России</span></li>
+          <li class="main-nav__item main-nav__item--addtional">Бесплатная доставка по России</li>
         </ul>
       </nav>
-      <div class="header-label">
-        <h1 class="header-label__title">Интернерт-магазин "Мишка"</h1>
+      <div class="page-title page-title--background">
+        <h1 class="page-title__text">Интернерт-магазин "Мишка"</h1>
       </div>
     </header>
     <main class="page-content">
@@ -70,8 +70,9 @@
         </article>
         <article class="video-production">
           <h2 class="video-production__title">Процесс производства</h2>
-          <video class="video-production__video" width="" height="" controls="controls" poster="video/production.jpg">
-          </video>
+          <div class="video-production__video">
+            <button class="video-production__btn" type="button" title="Проиграть видео"></button>
+          </div>
           <p class="video-production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
           <a class="video-production__btn btn" href="#">Сделать заказ</a>
         </article>
@@ -88,23 +89,23 @@
           <a class="social‐link social‐link‐‐in" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
         </div>
       </div>
-      <span class="page-footer__copyright">Разработано</span>
-      <a class="page-footer__academy-logo" href="https://htmlacademy.ru/intensive/adaptive">
-        <img src="" alt="Логотип HTML Academy" width="" height="">
-      </a>
+      <div class="page-footer__copyright">
+        <span class="page-footer__copyright-text">Разработано</span>
+        <a class="page-footer__copyright-logo" href="https://htmlacademy.ru/intensive/adaptive">
+          <img src="" alt="Логотип HTML Academy" width="" height="">
+        </a>
+      </div>
     </footer>
     <div class="buy-modal">
       <form action="https://echo.htmlacademy.ru" method="post">
-        <fieldset>
-          <legend class="buy-modal__title">Добавить в корзину</legend>
-          <span class="buy-modal__text">Выберите размер:</span>
-          <input type="radio" name="sizes" value="s" id="size-s" checked>
-          <label class="buy-modal__item" for="size-s">s</label>
-          <input type="radio" name="sizes" value="m" id="size-m">
-          <label class="buy-modal__item" for="size-m">m</label>
-          <input type="radio" name="sizes" value="l" id="size-l">
-          <label class="buy-modal__item" for="size-l">l</label>
-        </fieldset>
+        <p class="buy-modal__title">Добавить в корзину</p>
+        <span class="buy-modal__text">Выберите размер:</span>
+        <input type="radio" name="sizes" value="s" id="size-s" checked>
+        <label class="buy-modal__item" for="size-s">s</label>
+        <input type="radio" name="sizes" value="m" id="size-m">
+        <label class="buy-modal__item" for="size-m">m</label>
+        <input type="radio" name="sizes" value="l" id="size-l">
+        <label class="buy-modal__item" for="size-l">l</label>
         <input type="submit" value="Добавить">
       </form>
     </div>
