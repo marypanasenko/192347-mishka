@@ -1,0 +1,134 @@
+.form-order {
+  display: flex;
+  flex-direction: column;
+  padding: 0 30px;
+}
+.form-order__item {
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-top: 1px solid #62d1ba;
+}
+.form-order__title {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  padding-right: 28px;
+  font-size: 17px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: @green-light;
+
+  &--tel, &--email, &--message {
+    margin-top: 30px;
+  }
+
+  &--tel::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 50%;
+    width: 198px;
+    height: 1px;
+    background-color: #62d1ba;
+  }
+
+  &--email::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 50%;
+    width: 179px;
+    height: 1px;
+    background-color: #62d1ba;
+  }
+
+  &--message::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 50%;
+    width: 198px;
+    height: 1px;
+    background-color: #62d1ba;
+  }
+}
+
+.form-order__input {
+  display: none;
+}
+.form-order__label {
+  padding-left: 62px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  display: block;
+  font-size: 17px;
+  line-height: 18px;
+
+}
+.form-order__input--radio + .form-order__label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+.form-order__input--radio + .form-order__label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  // width: 40px;
+  // height: 40px;
+  // border-radius: 20px;
+  // border: 2px solid @gray-dark;
+}
+.form-order__input--checkbox + .form-order__label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+.form-order__input--checkbox + .form-order__label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  // width: 40px;
+  // height: 40px;
+  // border-radius: 20px;
+  // border: 2px solid @gray-dark;
+}
+.form-order__label--name {
+  padding-left: 0;
+  padding-bottom: 0;
+}
+.form-order__entry-field {
+  padding: 15px 0;
+  width: 260px;
+  border: none;
+  border-bottom: 2px solid @black;
+  font-size: 17px;
+  line-height: 18px;
+  color: @gray-dark;
+}
+.form-order__textarea {
+  min-height: 140px;
+  margin-top: 20px;
+  padding-left: 15px;
+  padding-top: 15px;
+  border: 2px solid @gray-dark;
+  font-size: 17px;
+  line-height: 18px;
+  color: @gray-dark;
+}
+.form-order__notice {
+  margin-top: 15px;
+  font-size: 14px;
+  line-height: 16px;
+  color: @gray-light;
+}

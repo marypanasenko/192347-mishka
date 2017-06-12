@@ -3,32 +3,33 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог товаров: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
       <a class="page-header__logo" href="index.html">
-        <img src="" alt="Логотип Интернерт-магазин Мишка" width="" height=""></img>
+        <img src="img/logo-mobile.svg" alt="Логотип Интернерт-магазин Мишка" width="86" height="35"></img>
       </a>
       <nav class="main-nav main-nav--open">
         <button class="main-nav__toggler" type="button" title="Меню"></button>
         <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="#">Каталог товаров</a></li>
-          <li class="main-nav__item"><a href="#">Вязание на заказ</a></li>
-          <li class="main-nav__item"><a href="#">Поиск по сайту</a></li>
-          <li class="main-nav__item"><a href="#">Корзина: пока пуста</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог товаров</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="form.html">Вязание на заказ</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Поиск по сайту</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Корзина: пока пуста</a></li>
         </ul>
         <ul class="main-nav__list main-nav__list--additional">
-          <li class="main-nav__item main-nav__item--addtional"><a href="#">Новое поступление</a></li>
-          <li class="main-nav__item main-nav__item--addtional"><a href="#">Распродажа</a></li>
+          <li class="main-nav__item main-nav__item--addtional"><a class="main-nav__link" href="#">Новое поступление</a></li>
+          <li class="main-nav__item main-nav__item--addtional"><a class="main-nav__link" href="#">Распродажа</a></li>
           <li class="main-nav__item main-nav__item--addtional">Бесплатная доставка по России</li>
         </ul>
       </nav>
-      <div class="page-title page-title--background">
-        <h1 class="page-title__text">Интернерт-магазин "Мишка"</h1>
+      <div class="page-title page-title--inner-background">
+        <h1 class="page-title__text">Вязание на заказ</h1>
       </div>
     </header>
     <main class="page-content">
-      <p class="page-content__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+      <p class="page-content__text page-content__text--form">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       <form class="form-order" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="form-order__item">
           <legend class="form-order__title">Тип</legend>
@@ -54,23 +55,21 @@
         </fieldset>
         <fieldset class="form-order__item">
           <legend class="form-order__title">ФИО</legend>
-          <label class="form-order__label" for="name">Имя:</label>
+          <label class="form-order__label form-order__label--name" for="name">Имя:</label>
           <input class="form-order__entry-field" type="text" placeholder="Введите ваше имя*" name="name" id="name" required>
-          <label class="form-order__label" for="surname">Фамилия:</label>
+          <label class="form-order__label form-order__label--name" for="surname">Фамилия:</label>
           <input class="form-order__entry-field" type="text" placeholder="Укажите фамилию*" name="surname" id="surname" required>
-          <label class="form-order__label" for="patronym">Отчество:</label>
+          <label class="form-order__label  form-order__label--name" for="patronym">Отчество:</label>
           <input class="form-order__entry-field" type="text" placeholder="Отчество, если желаете" name="patronym" id="patronym">
         </fieldset>
-        <div class="form-order__item">
-          <label class="form-order__title" for="tel">Тел</label>
-          <input class="form-order__entry-field" type="tel" placeholder="+7 XXX XX XX*" name="tel" id="tel"required>
-          <label class="form-order__title" for="email">e-mail</label>
-          <input class="form-order__entry-field" type="email" placeholder="Ваш Email*" name="email" required>
-        </div>
-        <label class="form-order__title" for="message">Доп</label>
+        <label class="form-order__title form-order__title--tel" for="tel">Тел</label>
+        <input class="form-order__entry-field" type="tel" placeholder="+7 XXX XX XX*" name="tel" id="tel"required>
+        <label class="form-order__title form-order__title--email" for="email">e-mail</label>
+        <input class="form-order__entry-field" type="email" placeholder="Ваш Email*" name="email" required>
+        <label class="form-order__title form-order__title--message" for="message">Доп</label>
         <textarea class="form-order__textarea" placeholder="Опишите все ваши пожелания к заказу" name="message"></textarea>
         <span class="form-order__notice">*Поля обязательны для заполнения</span>
-        <input type="submit" value="Отправить заказ">
+        <input class="btn" type="submit" value="Отправить заказ">
       </form>
     </main>
     <footer class="page-footer">
@@ -79,15 +78,15 @@
           <img src="" alt="Логотип Интернерт-магазин Мишка" width="" height="">
         </a>
         <div class="social‐links">
-          <a class="social‐link social‐link‐‐vk" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
-          <a class="social‐link social‐link‐‐fb" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-          <a class="social‐link social‐link‐‐in" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+          <a class="social‐link social‐link--instagram" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+          <a class="social‐link social‐link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+          <a class="social‐link social‐link--twitter" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
         </div>
       </div>
       <div class="page-footer__copyright">
         <span class="page-footer__copyright-text">Разработано</span>
         <a class="page-footer__copyright-logo" href="https://htmlacademy.ru/intensive/adaptive">
-          <img src="" alt="Логотип HTML Academy" width="" height="">
+          <img class="page-footer__img" src="img/htmlacademy.svg" alt="Логотип HTML Academy" width="27" height="34">
         </a>
       </div>
     </footer>
