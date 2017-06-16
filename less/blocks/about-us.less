@@ -10,11 +10,49 @@
 .about-us__item {
   margin: 0;
   padding: 85px 0;
-  font-size: 17px;
-  line-height: normal;
+  font-size: @base-font-size;
+  line-height: @base-line-height;
   list-style: none;
   font-weight: bold;
+
   &:last-child {
     padding-bottom: 0;
   }
+}
+
+@media @tablet-widths {
+  .about-us {
+    padding: 0 50px;
+    margin-bottom: 70px;
+  }
+  .about-us__title {
+    .title-tablet();
+    width: 100%;
+    padding-top: 57px;
+  }
+  .about-us__list-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+  .about-us__list {
+    width: 334px;
+  }
+  .about-us__item {
+    font-size: 20px;
+  }
+}
+
+@media @desktop-widths {
+  .about-us {
+    padding-left: 175px;
+  }
+  .about-us__title {
+    .title-desktop();
+    width: 100%;
+    padding-top: 68px;
+  }
+  .about-us__list {
+    width: 350px;
+  }
+
 }

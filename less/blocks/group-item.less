@@ -2,8 +2,8 @@
   box-sizing: border-box;
   padding: 30px 160px 0 30px;
   min-height: 103px;
-  font-size: 19px;
-  line-height: 24px;
+  font-size: @larger-font-size;
+  line-height: @base-line-height;
   font-weight: bold;
   text-decoration: none;
   background-color: @green-light;
@@ -11,4 +11,10 @@
 }
 .group-item:nth-of-type(2n) {
   background-color: @green-dark;
+}
+
+@media @tablet-widths {
+  .group-item {
+    margin: auto;
+  }
 }

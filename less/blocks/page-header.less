@@ -1,8 +1,48 @@
-.page-header {
-  .container();
-  display: flex;
-  flex-direction: column;
+  .page-header {
+    .container();
+    display: flex;
+    flex-direction: column;
+  }
+  .page-header__logo {
+    display: block;
+    text-align: center;
+  }
+
+
+@media @tablet-widths {
+  .page-header {
+    .container();
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 735px;
+
+    &--background {
+      .container();
+      background-image: url("../img/hero-mobile@1x.jpg");
+      background-repeat: no-repeat;
+      background-color: #f9f9f9;
+      background-position: 50% 100%;
+      background-size: 150%;
+    }
+
+  }
+  .page-header__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 88px;
+    background: @white;
+    padding: 0 50px;
+    justify-content: space-between;
+  }
+  .page-header__logo {
+    align-self: center;
+  }
 }
-.page-header__logo {
-  text-align: center;
+@media @desktop-widths {
+
+  .page-header__logo {
+    order: 2;
+  }
 }
