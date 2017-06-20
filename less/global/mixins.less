@@ -1,0 +1,41 @@
+.container() {
+  width: 320px;
+  margin: 0 auto;
+
+  @media @tablet-widths {
+    width: 668px;
+    margin: 0 auto;
+  }
+
+  @media @desktop-widths {
+    width: 1050px;
+  }
+}
+.title() {
+  margin: 0;
+  font-size: 25px;
+  line-height: @larger-line-height;
+  font-weight: bold;
+}
+.text() {
+  margin: 0;
+  font-size: @smaller-font-size;
+  line-height: @larger-line-height;
+  color: @gray-dark;
+}
+.title-tablet() {
+  padding: 0;
+  margin: 0;
+  font-size: @largest-font-size;
+  line-height: @largest-line-height;
+  font-weight: bold;
+  color: @black;
+}
+.title-desktop() {
+  padding: 0;
+  margin: 0;
+  font-size: @most-largest-font-size;
+  line-height: @most-largest-line-height;
+  font-weight: bold;
+  color: @black;
+}

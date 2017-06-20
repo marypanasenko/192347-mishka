@@ -1,0 +1,62 @@
+.buy-modal {
+  .container();
+  padding: 0 30px;
+}
+.buy-modal__title {
+  .title();
+  margin: 0 80px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.buy-modal__text {
+  .text();
+  display: block;
+  padding-top: 25px;
+  text-align: center;
+}
+.buy-modal__inner {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.buy-modal__input {
+  display: none;
+}
+.buy-modal__label {
+  text-align: center;
+  padding: 12px 0;
+  font-size: @base-font-size;
+  line-height: @base-line-height;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.buy-modal__input + .buy-modal__label {
+  width: 78px;
+  margin: 0;
+  border: 2px solid #ececec;
+  cursor: pointer;
+}
+.buy-modal__submit {
+  width: 100%;
+  background-color: @green-light;
+  border: none;
+  color: @white;
+}
+@media @tablet-widths {
+  .buy-modal {
+    width: 566px;
+  }
+  .buy-modal__title {
+    margin: 45px 108px 0 108px;
+  }
+  .buy-modal__text {
+    margin: 0 108px;
+  }
+  .buy-modal__inner {
+    margin: 0 108px;
+  }
+  .buy-modal__submit {
+    width: 350px;
+    margin: 31px 108px 45px 108px;
+  }
+}
