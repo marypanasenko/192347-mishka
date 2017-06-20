@@ -7,24 +7,26 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img src="img/logo-mobile.svg" alt="Логотип Интернерт-магазин Мишка" width="86" height="35"></img>
-      </a>
-      <nav class="main-nav main-nav--open">
+    <header class="page-header page-header--inner-background">
+      <div class="page-header__wrapper">
+        <a class="page-header__logo" href="index.html">
+          <img src="img/logo-mobile.svg" alt="Логотип Интернерт-магазин Мишка" width="86" height="35"></img>
+        </a>
         <button class="main-nav__toggler" type="button" title="Меню"></button>
-        <ul class="main-nav__list">
-          <li class="main-nav__item"><a class="main-nav__link" href="catalog.html">Каталог товаров</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="form.html">Вязание на заказ</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="#">Поиск по сайту</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="#">Корзина: пока пуста</a></li>
+        <ul class="main-nav main-nav__list main-nav__list--catalog-order">
+          <li class="main-nav__item"><a class="main-nav__link main-nav__link--catalog" href="catalog.html">Каталог товаров</a></li>
+          <li class="main-nav__item"><a class="main-nav__link main-nav__link--order" href="form.html">Вязание на заказ</a></li>
         </ul>
-        <ul class="main-nav__list main-nav__list--additional">
-          <li class="main-nav__item main-nav__item--addtional"><a class="main-nav__link" href="#">Новое поступление</a></li>
-          <li class="main-nav__item main-nav__item--addtional"><a class="main-nav__link" href="#">Распродажа</a></li>
-          <li class="main-nav__item main-nav__item--addtional">Бесплатная доставка по России</li>
+        <ul class="main-nav main-nav__list main-nav__list--search-shop">
+          <li class="main-nav__item"><a class="main-nav__link main-nav__link--search" href="#">Поиск по сайту</a></li>
+          <li class="main-nav__item"><a class="main-nav__link main-nav__link--shopcart" href="#">Корзина: пока пуста</a></li>
         </ul>
-      </nav>
+        <ul class="main-nav main-nav__list main-nav__list--additional">
+          <li class="main-nav__item main-nav__item--additional"><a class="main-nav__link" href="#">Новое поступление</a></li>
+          <li class="main-nav__item main-nav__item--additional"><a class="main-nav__link" href="#">Распродажа</a></li>
+          <li class="main-nav__item main-nav__item--additional">Бесплатная доставка по России</li>
+        </ul>
+      </div>
       <div class="page-title page-title--inner-background">
         <h1 class="page-title__text">Каталог товаров</h1>
       </div>
@@ -87,21 +89,23 @@
       </section>
     </main>
     <footer class="page-footer">
-      <div class="page‐footer__social">
+      <div class="page-footer__wrapper">
         <a class="page-footer__logo">
           <img src="" alt="Логотип Интернерт-магазин Мишка" width="" height="">
         </a>
-        <div class="social‐links">
-          <a class="social‐link social‐link--instagram" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
-          <a class="social‐link social‐link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
-          <a class="social‐link social‐link--twitter" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+        <div class="page‐footer__social">
+          <div class="social‐links">
+            <a class="social‐link social‐link--instagram" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+            <a class="social‐link social‐link--facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+            <a class="social‐link social‐link--twitter" href="https://www.instagram.com/htmlacademy">Мы в Инстаграме</a>
+          </div>
         </div>
-      </div>
-      <div class="page-footer__copyright">
-        <span class="page-footer__copyright-text">Разработано</span>
-        <a class="page-footer__copyright-logo" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="page-footer__img" src="img/htmlacademy.svg" alt="Логотип HTML Academy" width="27" height="34">
-        </a>
+        <div class="page-footer__copyright">
+          <span class="page-footer__copyright-text">Разработано</span>
+          <a class="page-footer__copyright-logo" href="https://htmlacademy.ru/intensive/adaptive">
+            <img class="page-footer__img" src="img/htmlacademy.svg" alt="Логотип HTML Academy" width="27" height="34">
+          </a>
+        </div>
       </div>
     </footer>
     <div class="buy-modal">

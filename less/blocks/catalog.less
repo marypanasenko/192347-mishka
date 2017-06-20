@@ -1,5 +1,12 @@
 .catalog {
   .container();
-  padding: 0 30px;
   margin-top: 30px;
+}
+
+@media @desktop-widths {
+  .catalog {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 }

@@ -1,4 +1,5 @@
 .about-us {
+  .container();
   padding-left: 30px;
 }
 .about-us__title {
@@ -6,10 +7,10 @@
 }
 .about-us__list {
   padding: 0;
+  margin: 0;
 }
 .about-us__item {
-  margin: 0;
-  padding: 85px 0;
+  margin: 85px 0 0 0;
   font-size: @base-font-size;
   line-height: @base-line-height;
   list-style: none;
@@ -23,35 +24,43 @@
 @media @tablet-widths {
   .about-us {
     padding: 0 50px;
-    margin-bottom: 70px;
+    margin-top: 57px;
   }
   .about-us__title {
     .title-tablet();
     width: 100%;
-    padding-top: 57px;
-  }
-  .about-us__list-wrapper {
-    display: flex;
-    flex-direction: row;
+    padding-top: 0;
   }
   .about-us__list {
-    width: 334px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+
   }
-  .about-us__item {
+  .about-us__item{
+    width: 330px;
     font-size: 20px;
+    align-self: flex-start;
+
+    &:nth-of-type(even) {
+      align-self: flex-end;
+    }
   }
 }
 
 @media @desktop-widths {
-  .about-us {
-    padding-left: 175px;
-  }
+
   .about-us__title {
     .title-desktop();
     width: 100%;
-    padding-top: 68px;
+    padding: 0 175px;
   }
   .about-us__list {
+    padding: 0 175px;
+
+  }
+  .about-us__item {
     width: 350px;
   }
 

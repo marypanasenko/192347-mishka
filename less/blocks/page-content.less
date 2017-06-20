@@ -1,16 +1,39 @@
 .page-content {
-  .container();
   display: flex;
   flex-direction: column;
+
+  &--form {
+    .container();
+  }
 }
 .page-content__text {
+  margin: 0 auto;
   padding: 0 30px;
-  margin: 0;
   font-size: @smallest-font-size;
   line-height: @base-line-height;
   color: @gray-dark;
 
   &--form {
-    margin: 25px 0;
+
+  }
+}
+@media @tablet-widths {
+  .page-content__text {
+    .container();
+    padding: 0 50px;
+    font-size: @base-font-size;
+    line-height: @larger-line-height;
+  }
+  .page-content {
+    &--form {
+      width: 100%;
+    }
+  }
+}
+
+@media @desktop-widths {
+  .page-content__text {
+    width: 700px;
+    padding: 0 225px;
   }
 }

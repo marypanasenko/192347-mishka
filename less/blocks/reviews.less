@@ -1,7 +1,9 @@
 .reviews {
+  .container();
   display: flex;
   flex-direction: column;
   padding-left: 30px;
+
 }
 .reviews__title {
   .title();
@@ -58,6 +60,7 @@
     position: relative;
     flex-wrap: wrap;
     padding: 70px 50px 50px 50px;
+    margin-top: 70px;
     background: url("../img/review@1x.jpg") no-repeat
   }
   .reviews__cite {
@@ -103,6 +106,15 @@
     height: 38px;
     padding: 0;
     margin: 0;
+  }
+
+}
+@media @desktop-widths {
+  .reviews__title {
+    padding-left: 175px;
+  }
+  .reviews__cite {
+    padding-left: 175px;
   }
 
 }

@@ -14,8 +14,8 @@
 }
 
 .page-title__text {
-  margin: auto;
-  padding: 75px 35px 72px 35px;
+  margin: 0 auto;
+  padding: 75px 30px 72px 30px;
   text-align: center;
   font-size: 27px;
   line-height: @largest-line-height;
@@ -23,17 +23,20 @@
 @media @tablet-widths {
   .page-title {
     width: auto;
-    padding: 0 50px;
-    height: auto;
+    padding: 0;
+    min-height: auto;
 
 
     &--index-background {
       background: none;
-
+    }
+    &--inner-background {
+      background: none;
+      padding: 88px 0;
     }
   }
   .page-title__text {
-    display: inline-flex;
+    display: block;
     padding: 0;
   }
 }
