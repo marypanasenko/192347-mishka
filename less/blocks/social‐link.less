@@ -5,20 +5,27 @@
   &--instagram {
     width: 22px;
     height: 21px;
-    background: url("../img/icon-insta.svg") no-repeat;
   }
   &--facebook {
     width: 15px;
     height: 29px;
-    background: url("../img/icon-fb.svg") no-repeat;
   }
   &--twitter {
     width: 24px;
     height: 20px;
-    background: url("../img/icon-twitter.svg") no-repeat;
   }
 }
 
 @media @tablet-widths {
+  .social‐link__svg {
+    fill: #231F20;
+
+    &:hover {
+      fill: #46c1ae;
+    }
+    &:active {
+      opacity: 0.3;
+    }
+  }
 
 }

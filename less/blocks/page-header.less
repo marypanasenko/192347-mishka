@@ -1,37 +1,74 @@
-  .page-header {
-    .container();
-    display: flex;
-    flex-direction: column;
+.page-header {
+  .container();
+  display: flex;
+  flex-direction: column;
+  &--index-background {
+    min-height: 282px;
+    background-image: url("../img/hero-mobile@1x.jpg");
+    background-position: 50% 20%;
+    background-repeat: no-repeat;
+    background-color: #f9f9f9;
+    background-size: auto 320px;
+
+    @media @retina {
+      background-image: url("../img/hero-mobile@2x.jpg");
+      background-size: auto 320px;
+    }
   }
+}
   .page-header__logo {
     display: block;
     text-align: center;
+    margin-top: 22px;
   }
+
+@media @mobile-widths-only {
+  .page-header__wrapper {
+    position: relative;
+  }
+}
 
 
 @media @tablet-widths {
+
   .page-header {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     width: 100%;
 
     &--index-background {
-      min-height: 735px;
-      background-image: url("../img/hero-mobile@1x.jpg");
+      height: 833px;
+      background-image: url("../img/hero-desktop@1x.jpg");
       background-repeat: no-repeat;
       background-color: #f9f9f9;
-      background-position: 50% 100%;
-      background-size: 150%;
+      background-position: 50% 121%;
+      position: relative;
+      background-size: auto 768px;
+
+      @media @retina {
+        background-image: url("../img/hero-mobile@2x.jpg");
+        background-size: auto 768px;
+      }
     }
 
     &--inner-background {
       background-color: #f9f9f9;
       height: auto;
       margin-bottom: 80px;
-
     }
-
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -11px;
+      right: 0;
+      z-index: 2;
+      display: block;
+      width: 100%;
+      height: 24px;
+      background-image: url(../img/bg-zigzag-fill.svg);
+      background-size: auto 24px;
+      background-repeat: repeat-x;
+    }
   }
   .page-header__wrapper {
     .container();
@@ -42,15 +79,46 @@
     background: @white;
     padding: 0 50px;
     justify-content: space-between;
+    border-bottom: 1px solid @gray-borders;
   }
   .page-header__logo {
     align-self: center;
     padding-right: 100px;
+    margin: 9px 0 0 0;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+  .page-header__logo-mobile {
+    width: auto;
+    height: auto;
   }
 }
 @media @desktop-widths {
 
+  .page-header {
+
+    &--index-background {
+      background-position: 48% 111%;
+      background-size: auto 756px;
+    }
+
+    &::after {
+      background-size: auto 32px;
+    }
+  }
+
   .page-header__logo {
     order: 2;
+    padding: 0;
+    margin: 9px 25px 0 0;
+  }
+  .page-header__logo-desktop {
+    margin: 0 0 0 0;
   }
 }
